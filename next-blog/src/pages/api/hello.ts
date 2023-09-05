@@ -7,11 +7,11 @@ type Data = {
   name: string
 }
 
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
+  console.log(res,"response")
   res.status(200).json(jsonData)
-
 }
-
